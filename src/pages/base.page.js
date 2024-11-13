@@ -4,6 +4,7 @@ export class BasePage {
     constructor(page) {
         this.page = page;
         this.pageUrl = '/';
+        this.errorText = this.page.locator('.message.danger');
     }
 
     async open() {
@@ -25,6 +26,9 @@ export class BasePage {
     }
 
     async fill(locator, value) {
+        if (value === null) {
+            return;
+        }
         await step(`Input in ${locator} text ${value}`, async () => {
             await locator.fill(`${value}`);
         })

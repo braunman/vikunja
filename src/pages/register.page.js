@@ -11,11 +11,11 @@ export class RegistryPage extends BasePage {
         this.createAccountButton = this.page.locator("#register-submit");
     }
 
-    async registerUser(username, email, password) {
-        await step(`Register new user`, async () => {
-            await this.fill(this.usernameInput, username);
-            await this.fill(this.emailInput, email);
-            await this.fill(this.passwordInput, password);
+    async registerUser(user) {
+        await step(`Register new user ${user}`, async () => {
+            await this.fill(this.usernameInput, user.username);
+            await this.fill(this.emailInput, user.email);
+            await this.fill(this.passwordInput, user.password);
             await this.click(this.createAccountButton);
         })
     }

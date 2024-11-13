@@ -9,13 +9,12 @@ export class LoginPage extends BasePage {
         this.usernameInput = this.page.locator("#username");
         this.passwordInput = this.page.locator("#password");
         this.loginButton = this.page.locator("button.is-primary");
-        this.errorText = this.page.locator('.message.danger')
     }
 
-    async loginUser(username, password) {
-        await step(`Login user`, async () => {
-            await this.fill(this.usernameInput, username);
-            await this.fill(this.passwordInput, password);
+    async loginUser(user) {
+        await step(`Login user ${user.username}:${user.password}`, async () => {
+            await this.fill(this.usernameInput, user.username);
+            await this.fill(this.passwordInput, user.password);
             await this.click(this.loginButton);
         })
     }
