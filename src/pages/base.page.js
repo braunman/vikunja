@@ -7,9 +7,18 @@ export class BasePage {
         this.errorText = this.page.locator('.message.danger');
     }
 
-    async open() {
+    async open(checkElement = null) {
         await step(`Open page ${process.env.baseURL}${this.pageUrl}`, async () => {
             await this.page.goto(this.pageUrl);
+            if (checkElement !== null) {
+                await checkElement.waitFor({state: "visible"});
+            }
+        })
+    }
+
+    async reload() {
+        await step(`Reload page ${process.env.baseURL}${this.pageUrl}`, async () => {
+            await this.page.reload({ waitUntil: 'networkidle' });
         })
     }
 
