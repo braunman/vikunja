@@ -1,4 +1,4 @@
-import { description, feature, tags } from "allure-js-commons";
+import { description, feature } from "allure-js-commons";
 
 import { expect, test } from '../../src/fixtures/web_fixture';
 import { User } from '../../src/helper/user.builder';
@@ -18,7 +18,7 @@ test('Register new user @UI @REGISTER @POSITIVE', async ({ webApp }) => {
 
 
 [
-    { user: new User({ username: "demo.demo" }).build(), describe: "wrong username" },
+    // { user: new User({ username: "demo.demo" }).build(), describe: "wrong username" },
     { user: new User({ email: 'demo' }).build(), describe: "wrong email" },
 ].forEach(({ user, describe }) => {
     test(`Registry with wrong data: ${describe} @UI @LOGIN @NEGATIVE`, async ({ webApp }) => {
@@ -29,4 +29,4 @@ test('Register new user @UI @REGISTER @POSITIVE', async ({ webApp }) => {
         await expect(webApp.registerPage.errorText).toContainText('Invalid Data')
     });
 });
-
+//

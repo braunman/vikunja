@@ -10,7 +10,7 @@ export async function saveToFile(obj, filePath) {
 export async function readFromFile(filePath) {
         const data = await fs.readFile(filePath, 'utf8');
         const obj = JSON.parse(data);
-        console.log(`Object read to file ${filePath}`);
+        console.log(`Object read from file ${filePath}`);
         return obj;
 }
 

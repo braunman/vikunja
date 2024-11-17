@@ -1,15 +1,15 @@
-import { description, feature, tags } from "allure-js-commons";
+import { description, feature} from "allure-js-commons";
 
 import { expect, test } from '../../src/fixtures/web_fixture';
-import { User } from '../../src/helper';
+import {readFromFile, User} from '../../src/helper';
 
+test.use({ storageState: { cookies: [], origins: [] } });
 
-test('Login with exist user @UI @LOGIN @POSITIVE', async ({ loginUser, webApp }) => {
-    description("Try to login with new register user (user with credentials demo:demo exist by default)")
-    feature("login")
-    await loginUser;
-    await webApp.mainPage.logout()
-    const user = new User({ username: "demo", password: "demo" })
+test('Login with exist user @UI @LOGIN @POSITIVE', async ({ webApp }) => {
+    await description("Try to login with new register user (user with credentials demo:demo exist by default)")
+    await feature("login")
+    const user = await readFromFile('.auth/user.json')
+    console.log(user)
     await webApp.loginPage.open()
     await webApp.loginPage.loginUser(user)
     await expect(webApp.mainPage.loginUsername).toContainText(user.username)
