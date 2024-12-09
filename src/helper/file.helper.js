@@ -1,8 +1,8 @@
 import fs from 'fs/promises';
 
 export async function saveToFile(obj, filePath) {
-        const json = JSON.stringify(obj, null, 2); // Преобразуем объект в JSON-строку с отступами
-        await fs.writeFile(filePath, json, 'utf8'); // Записываем JSON-строку в файл
+        const json = JSON.stringify(obj, null, 2);
+        await fs.writeFile(filePath, json, 'utf8');
         console.log(`Object ${json} save to file ${filePath}`);
 }
 

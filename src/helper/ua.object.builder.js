@@ -1,5 +1,12 @@
 import { faker } from '@faker-js/faker';
 
+export class Todo {
+    build() {
+        return faker.lorem.sentence();
+    }
+}
+
+
 export class User {
     constructor({ username = null, password = null, email = null } = {}) {
         this.username = username !== null ? username : faker.internet.username().replace(/\./g, '');

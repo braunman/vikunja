@@ -1,4 +1,5 @@
 import { BasePage } from "./base.page";
+import { MenuElement } from "./menu.element";
 import { step } from 'allure-js-commons';
 import {expect} from "@playwright/test";
 
@@ -8,9 +9,11 @@ export class MainPage extends BasePage {
         this.loginUsername = this.page.locator('.username');
         this.userMenuDropdown = this.page.locator('.dropdown .dropdown-icon');
         this.menuLogoutButton = this.page.getByText("Logout");
+        this.menu = new MenuElement(this.page);
         this.addNewTaskButton = this.page.locator(".add-task-button");
         this.netTaskInput = this.page.locator('.add-task-textarea');
         this.allTasks = this.page.locator('.task')
+        this.projectTitle = this.page.locator('.project-title');
     }
 
     async open(){
