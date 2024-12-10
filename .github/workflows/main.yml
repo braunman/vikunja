@@ -16,6 +16,8 @@ jobs:
         run: npx playwright install --with-deps
       - name: Run tests
         run: npm run test
+      - name: ls
+        run: find . | sed -e "s/[^-][^\/]*\// |/g" -e "s/|\([^ ]\)/|-\1/"
       - uses: actions/upload-artifact@v4
         if: always()
         continue-on-error: true
