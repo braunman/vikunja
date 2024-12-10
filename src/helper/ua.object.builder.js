@@ -1,6 +1,6 @@
 import { faker } from '@faker-js/faker';
 
-export class Todo {
+export class Task {
     build() {
         return faker.lorem.sentence();
     }

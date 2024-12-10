@@ -9,7 +9,7 @@ test.use({ storageState: { cookies: [], origins: [] } });
 
 test('Register new user @UI @REGISTER @POSITIVE', async ({ webApp }) => {
     await description("Register new user")
-    await feature("register")
+    await feature("registry")
     const user = new User()
     await webApp.registerPage.open()
     await webApp.registerPage.registerUser(user)

@@ -6,7 +6,7 @@ import { Project } from '../../src/helper';
 
 test('Create new project @UI @PROJECT @POSITIVE', async ({webApp}) => {
     await description("Try to create new task in default project")
-    await feature("todo")
+    await feature("task")
     const projectTitle =new Project().build()
     await webApp.mainPage.open();
     await webApp.mainPage.menu.goToProjects();

@@ -19,7 +19,7 @@ export class UserAPI {
     }
 }
 
-export class TodoApi {
+export class TaskApi {
     constructor({ title, projectId = 1 } = {}) {
         this.title = title || faker.lorem.sentence();
         this.projectId = projectId;
