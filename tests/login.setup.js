@@ -3,6 +3,7 @@ import { User } from '../src/helper';
 import {saveToFile} from "../src/helper";
 
 const auth_file_name = '.auth/user.json';
+const login_file_name = '.auth/login.json';
 
 setup('Create new user', async ({ webApp }) => {
     const user = new User().build()
@@ -10,5 +11,5 @@ setup('Create new user', async ({ webApp }) => {
     await webApp.registerPage.registerUser(user)
     await expect(webApp.mainPage.loginUsername).toContainText(user.username)
     await webApp.page.context().storageState({path: auth_file_name})
-    await saveToFile(user,auth_file_name)
+    await saveToFile(user, login_file_name)
 });

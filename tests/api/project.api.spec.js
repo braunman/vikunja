@@ -17,11 +17,13 @@ test("Test create new project @API @PROJECT", async({api}) => {
 test("Test get all projects @API @PROJECT", async({api}) => {
     await description("Get all exist project by api")
     await feature("project")
+    const {data: existTasks} = await api.project.getAll()
+    const countTasks = existTasks.length
     const project = new ProjectApi().build()
     await api.project.create(project)
-    const {data, status} = await api.tasks.getAll()
+    const {data, status} = await api.project.getAll()
     await expect(status).toEqual(200)
-    await  expect(data.length).toBeGreaterThan(1)
+    await  expect(data.length).toEqual(countTasks + 1)
 })
 
 
