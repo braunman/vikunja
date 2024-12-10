@@ -2,8 +2,8 @@ import { expect, test as setup } from '../src/fixture';
 import { User } from '../src/helper';
 import {saveToFile} from "../src/helper";
 
-const auth_file_name = '.auth/user.json';
-const login_file_name = '.auth/login.json';
+const auth_file_name = '.auth/login.json';
+const login_file_name = '.auth/user.json';
 
 setup('Create new user', async ({ webApp }) => {
     const user = new User().build()
