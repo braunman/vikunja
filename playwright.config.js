@@ -39,19 +39,20 @@ module.exports = defineConfig({
       testMatch: /.*\.setup\.js/,
     },
     {
-      name: 'chromium',
-      use: { ...devices['Desktop Chrome'],
+      name: 'ui',
+      use: {
+        ...devices['Desktop Chrome'],
         storageState: '.auth/login.json',
       },
+      testDir: 'tests/ui',
       dependencies: ['setup'],
     },
-
-    // {
-    //   name: 'api',
-    //   use: { ...devices['Desktop Firefox'] },
-    // },
-
-  ],
+    {
+      name: 'api',
+      use: {},
+      testDir: 'tests/api',
+    },
+  ]
 
 });
 

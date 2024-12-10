@@ -13,4 +13,14 @@ export class ProjectsService extends BaseService {
     async getAll(){
         return await this.get(this.url)
     }
+
+    async getBaseProjectID(){
+        const defaultTitleName = 'Inbox'
+        const {data} = await this.getAll()
+        for (const project of data){
+            if (project.title === defaultTitleName){
+                return project.id
+            }
+        }
+    }
 }

@@ -1,5 +1,4 @@
 import {step} from "allure-js-commons";
-import {AxiosClient} from "./axios.client";
 
 export class BaseService {
     constructor(client) {
@@ -21,10 +20,15 @@ export class BaseService {
     }
 
     async put(url, data= {}) {
-        await console.log('url', url);
-        await console.log('data', data);
         return await step(`Put request to ${url}`, async () => {
             const _response = await this.client.put(url, data);
+            return await this.getResponse(_response);
+        });
+    }
+
+    async delete(url) {
+        return await step(`Delete request to ${url}`, async () => {
+            const _response = await this.client.delete(url);
             return await this.getResponse(_response);
         });
     }

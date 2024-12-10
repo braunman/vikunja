@@ -5,6 +5,9 @@ export class AxiosClient {
         this.client = axios.create({
             baseURL: options.baseURL,
             headers: options.headers,
+            validateStatus: function (status) {
+                return true;
+            }
         });
 
     }
@@ -14,14 +17,14 @@ export class AxiosClient {
     }
 
     async post(url, data = {}) {
-        return await this.client.post(url, data,{  validateStatus: function (status) {return true;}});
+        return await this.client.post(url, data);
     }
 
     async put(url, data = {}) {
-        return await this.client.put(url, data,{  validateStatus: function (status) {return true;}});
+        return await this.client.put(url, data);
     }
 
     async delete(url) {
-        return await this.client.delete(url,{  validateStatus: function (status) {return true;}});
+        return await this.client.delete(url);
     }
 }

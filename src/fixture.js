@@ -1,7 +1,7 @@
 import {expect, test as base} from '@playwright/test';
-import {WebApp} from '../app';
-import {ApiClient} from '../api.client';
-import {fileExists, saveToFile, readFromFile} from "../helper";
+import {WebApp} from './app';
+import {ApiClient} from './api.client';
+import {fileExists, saveToFile, readFromFile} from "./helper";
 
 export { expect } from '@playwright/test';
 
@@ -12,15 +12,14 @@ export const test = base.extend({
     },
 
     api: async ({}, use) => {
-        let api = new ApiClient();
+        let api;
         if (await fileExists('.auth/token.json')){
             const data = await readFromFile('.auth/token.json');
-            await console.log(data)
-            api = new ApiClient({ headers: { 'Authorization': `${data.token}`}})
+            api = new ApiClient({ headers: { 'Authorization': `${data.token}`}});
         }
         else {
-            api = await ApiClient.loginAs()
-            await saveToFile({token: api.token}, '.auth/token.json')
+            api = await ApiClient.loginAs();
+            await saveToFile({token: api.token}, '.auth/token.json');
         }
         await use(api);
     }

@@ -1,6 +1,6 @@
 import { description, feature } from "allure-js-commons";
 
-import { expect, test } from '../../src/fixtures/web_fixture';
+import { expect, test } from '../../src/fixture';
 import { Todo } from '../../src/helper';
 
 

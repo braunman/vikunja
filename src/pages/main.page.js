@@ -46,9 +46,7 @@ export class MainPage extends BasePage {
         return await step(`Get tasks count`, async () => {
             try{
                 await expect(this.allTasks.first()).toBeVisible({timeout: 2000});
-                const elementCount = await this.allTasks.count()
-                console.log(`found ${elementCount} tasks count`)
-                return elementCount
+                return await this.allTasks.count()
             } catch (e){
                 return 0
             }

@@ -1,7 +1,7 @@
 import { description, feature } from "allure-js-commons";
 
-import { expect, test } from '../../src/fixtures/web_fixture';
-import { User } from '../../src/helper/user.builder';
+import { expect, test } from '../../src/fixture';
+import { User } from '../../src/helper';
 
 
 test.use({ storageState: { cookies: [], origins: [] } });
