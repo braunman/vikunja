@@ -8,7 +8,7 @@ export class BasePage {
     }
 
     async open(checkElement = null) {
-        await step(`Open page ${process.env.baseURL}${this.pageUrl}`, async () => {
+        await step(`Open page ${this.pageUrl}`, async () => {
             await this.page.goto(this.pageUrl);
             if (checkElement !== null) {
                 await checkElement.waitFor({state: "visible"});

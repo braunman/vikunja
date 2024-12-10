@@ -4,9 +4,9 @@ import { expect, test } from '../../src/fixture';
 import { Todo } from '../../src/helper';
 
 
-test('Create new task @UI @TODO @POSITIVE', async ({webApp}) => {
+test('Create new task @UI @TASK @POSITIVE', async ({webApp}) => {
     await description("Try to create new task in default project")
-    await feature("todo")
+    await feature("task")
     const taskName = new Todo().build();
     await webApp.mainPage.open();
     const tasks = await webApp.mainPage.getTasksCount()
@@ -16,9 +16,9 @@ test('Create new task @UI @TODO @POSITIVE', async ({webApp}) => {
 });
 
 
-test('Create new tasks and change status @UI @TODO @POSITIVE', async ({webApp}) => {
+test('Create new tasks and change status @UI @TASK @POSITIVE', async ({webApp}) => {
     await description("Create list of 2 tasks, including completed ones (the completed task should disappear from the list)")
-    await feature("todo")
+    await feature("task")
     const taskName = new Todo().build();
     const doneTaskName = new Todo().build();
     await webApp.mainPage.open();

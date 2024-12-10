@@ -7,6 +7,13 @@ export class Todo {
 }
 
 
+export class Project {
+    build() {
+        return faker.lorem.word();
+    }
+}
+
+
 export class User {
     constructor({ username = null, password = null, email = null } = {}) {
         this.username = username !== null ? username : faker.internet.username().replace(/\./g, '');

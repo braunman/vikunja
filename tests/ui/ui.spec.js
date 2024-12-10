@@ -20,8 +20,8 @@ test('Login with exist user @UI @LOGIN @POSITIVE', async ({ webApp }) => {
     { user: new User({ username: 'demo' }).build(), describe: "wrong password" },
 ].forEach(({ user, describe }) => {
     test(`Login with wrong credentials: ${describe} @UI @LOGIN @NEGATIVE`, async ({ webApp }) => {
-        description("Try to login with wrong credentials")
-        feature("login")
+        await description("Try to login with wrong credentials")
+        await feature("login")
         await webApp.loginPage.open()
         await webApp.loginPage.loginUser(user)
         await expect(webApp.loginPage.errorText).toContainText('Wrong username or password.')

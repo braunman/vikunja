@@ -1,9 +1,12 @@
 import { expect, test } from '../../src/fixture';
 import {ApiClient} from "../../src/api.client";
 import {UserAPI} from "../../src/helper";
+import {description, feature} from "allure-js-commons";
 
 
-test("Test registry new user @API", async({}) => {
+test("Test registry new user @API @LOGIN", async({}) => {
+    await description("Registry new user  by api")
+    await feature("registry")
     const userData = new UserAPI().build();
     const api = new ApiClient()
     const {data, status} = await api.register.register(userData)
@@ -13,7 +16,9 @@ test("Test registry new user @API", async({}) => {
 })
 
 
-test("Test get auth key @API", async({}) => {
+test("Test get auth key @API @LOGIN", async({}) => {
+    await description("Check API token for user")
+    await feature("login")
     const userData = new UserAPI().build();
     const api = new ApiClient()
     await api.register.register(userData)

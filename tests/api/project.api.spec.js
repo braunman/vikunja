@@ -1,8 +1,11 @@
 import { expect, test } from '../../src/fixture';
 import {ProjectApi} from "../../src/helper";
+import {description, feature} from "allure-js-commons";
 
 
-test("Test create new project @API", async({api}) => {
+test("Test create new project @API @PROJECT", async({api}) => {
+    await description("Create new project by api")
+    await feature("project")
     const project = new ProjectApi().build()
     const {data, status} = await api.project.create(project)
     await expect(status).toEqual(201)
@@ -11,7 +14,9 @@ test("Test create new project @API", async({api}) => {
 })
 
 
-test("Test get all projects", async({api}) => {
+test("Test get all projects @API @PROJECT", async({api}) => {
+    await description("Get all exist project by api")
+    await feature("project")
     const project = new ProjectApi().build()
     await api.project.create(project)
     const {data, status} = await api.tasks.getAll()

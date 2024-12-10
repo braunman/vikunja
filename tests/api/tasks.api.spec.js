@@ -1,8 +1,11 @@
 import { expect, test } from '../../src/fixture';
 import {TodoApi} from "../../src/helper";
+import {description, feature} from "allure-js-commons";
 
 
-test("Test create new task @API", async({api}) => {
+test("Test create new task @API @TASK", async({api}) => {
+    await description("Create new task by api");
+    await feature("task")
     const projectID = await api.project.getBaseProjectID()
     const todo = new TodoApi({projectId: projectID}).build()
     const {data, status} = await api.tasks.create(todo)
@@ -11,7 +14,9 @@ test("Test create new task @API", async({api}) => {
     await  expect(data).toHaveProperty('title', todo.title)
 })
 
-test("Test set new task to done @API", async({api}) => {
+test("Test set new task to done @API @TASK", async({api}) => {
+    await description("Create new task and set it done by api");
+    await feature("task")
     const projectID = await api.project.getBaseProjectID()
     const todo = new TodoApi({projectId: projectID})
     const {data: createdTask, status: createdTaskStatus} = await api.tasks.create(todo.build())
@@ -23,7 +28,9 @@ test("Test set new task to done @API", async({api}) => {
     await expect(data).toHaveProperty('id', createdTask.id)
 })
 
-test("Delete task @API", async({api}) => {
+test("Delete task @API @TASK", async({api}) => {
+    await description("Create new task  and delete it by api");
+    await feature("task")
     const projectID = await api.project.getBaseProjectID()
     const todo = new TodoApi({projectId: projectID}).build()
     const {data: create} = await api.tasks.create(todo)
@@ -32,7 +39,9 @@ test("Delete task @API", async({api}) => {
     await expect(data).toHaveProperty('message', 'Successfully deleted.')
 })
 
-test("Test get all tasks @API", async({api}) => {
+test("Test get all tasks @API @TASK", async({api}) => {
+    await description("Get all exist tasks by api");
+    await feature("task")
     const projectID = await api.project.getBaseProjectID()
     const todo = new TodoApi({projectId: projectID}).build()
     await api.tasks.create(todo)
