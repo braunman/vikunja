@@ -1,6 +1,0 @@
->>>
-undefined
->>>
-Object {
-  "token": "Bearer undefined"
-} save to file .auth/token.json
