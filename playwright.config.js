@@ -43,6 +43,7 @@ module.exports = defineConfig({
       use: {
         ...devices['Desktop Chrome'],
         storageState: '.auth/login.json',
+        screenshot: 'only-on-failure',
       },
       testDir: 'tests/ui',
       dependencies: ['setup'],

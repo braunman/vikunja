@@ -1,4 +1,4 @@
-import { step } from "allure-js-commons";
+import { step, attachment, ContentType} from "allure-js-commons";
 
 export class BasePage {
     constructor(page) {
