@@ -79,7 +79,7 @@ ____
 <a id="tg"></a>
 ## <img width="30" style="vertical-align:middle" title="Telegram" src="media/logo/telegram.svg"> Уведомления в Telegram с использованием бота
 После завершения сборки, бот, созданный в <code>Telegram</code>, автоматически обрабатывает и отправляет сообщение с отчетом
-о прогоне тестов в [специально настроенный чат](https://t.me/AlDvoFWbot).
+о прогоне тестов в чат.
 <div style="background-color: #18222d">
 <p align="center">
 <img width="40%" title="Telegram Notifications" src="media/screenshots/telegram.png">
