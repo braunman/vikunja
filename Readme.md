@@ -11,15 +11,17 @@
 
 Тесты написаны на языке <code>JavaScript</code> с использованием фреймворка для автоматизации тестирования <code>[Playwright](https://playwright.dev)</code>.
 
-Для удаленного запуска реализована джоба в <code>Jenkins</code> с формированием Allure-отчета и отправкой результатов в <code>Telegram</code> при помощи бота.
+Для удаленного запуска реализована джоба в <code>Jenkins</code>, а так же <code>Github</code> action с формированием Allure-отчета и отправкой результатов в <code>Allure TestOps</code> и <code>Telegram</code> при помощи бота.
 
 ____
 <a id="cases"></a>
 ## 🕵️‍♂️ Тест-кейсы
-Auto:
+### Auto:
 - Проверка авторизации
 - Создания нового пользователя
-- Проверка создания контакта
+- Создание нового проекта
+- Создание новой задачи
+- Изменение статуса задачи
 - API тесты
 
 <a id="autotests"></a>
@@ -28,9 +30,17 @@ ____
 
 ### Запуск тестов из терминала
 
-Для запуска тестов использовать команду ниже:
+Для запуска всех тестов использовать команду ниже:
 ```
 npm test
+```
+Для запуска тестов на API:
+```
+npx playwright test --project=api
+```
+Для запуска тестов на UI:
+```
+npx playwright test --project=ui
 ```
 
 <a id="generateAllureReport"></a>
@@ -44,7 +54,7 @@ npm run allure
 
 ---
 <a id="jenkins"></a>
-## <img width="20" style="vertical-align:middle" title="Jenkins" src="media/logo/jenkins.svg"> </a> Сборка в <a target="_blank" href="https://jenkins.autotests.cloud/job/001-aldvo-JsPlaywrightFinalWork/"> Jenkins </a>
+## <img width="20" style="vertical-align:middle" title="Jenkins" src="media/logo/jenkins.svg"> </a> Сборка в <a target="_blank" href="https://jenkins.autotests.cloud/job/001-braunman-JsPlaywrightFinalWork/"> Jenkins </a>
 Для доступа в Jenkins необходима регистрация на ресурсе [Jenkins](https://jenkins.autotests.cloud/) Для запуска сборки необходимо перейти в раздел <code>Build with parameters</code>, выбрать необходимые параметры и нажать кнопку <code>Build</code>.
 <p align="center">
 <img title="jenkins" src="media/screenshots/jenkins.png ">
@@ -53,14 +63,14 @@ npm run allure
 
 ____
 <a id="allureReport"></a>
-## <img width="30" style="vertical-align:middle" title="Allure Report" src="media/logo/allure.svg"> </a> Пример <a target="_blank" href="https://jenkins.autotests.cloud/job/001-aldvo-JsPlaywrightFinalWork/22/allure/"> Allure-отчета </a>
+## <img width="30" style="vertical-align:middle" title="Allure Report" src="media/logo/allure.svg"> </a> Пример <a target="_blank" href="https://jenkins.autotests.cloud/job/001-braunman-JsPlaywrightFinalWork/allure/"> Allure-отчета </a>
 <p align="center">
 <img title="Allure Report" src="media/screenshots/allure.png">
 </p>
 
 ____
 <a id="allureTestOpsReport"></a>
-## <img width="30" style="vertical-align:middle" title="Allure TestOps Report" src="media/logo/testops-logo.png"> </a> Пример <a target="_blank" href="https://allure.autotests.cloud/launch/43065/tree/677705?treeId=0"> Allure TestOps-отчета </a>
+## <img width="30" style="vertical-align:middle" title="Allure TestOps Report" src="media/logo/testops-logo.png"> </a> Пример <a target="_blank" href="https://allure.autotests.cloud/launch/43117/"> Allure TestOps-отчета </a>
 <p align="center">
 <img title="Allure TestOps Report" src="media/screenshots/allure-testops.png">
 </p>

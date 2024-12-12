@@ -1,4 +1,5 @@
 import {BaseService} from "./base.service";
+import {step} from "allure-js-commons";
 
 
 export class LoginService extends BaseService {
@@ -8,7 +9,9 @@ export class LoginService extends BaseService {
     }
 
     async login({username, password}) {
-        const data = {"long_token": true,username, password };
-        return await this.post(this.url, data)
+        return await step(`Login as user ${username} password ${password}`, async () => {
+            const data = {"long_token": true, username, password};
+            return await this.post(this.url, data)
+        })
     }
 }

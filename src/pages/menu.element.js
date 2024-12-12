@@ -1,7 +1,7 @@
 import {BasePage} from "./base.page";
 
 
-export class  MenuElement extends BasePage {
+export class MenuElement extends BasePage {
     constructor(page) {
         super(page);
         this.page = page;

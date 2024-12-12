@@ -1,4 +1,4 @@
-import {AxiosClient, LoginService, ProjectsService, RegisterService, TasksService,} from "./api/index";
+import {AxiosClient, LoginService, ProjectsService, RegistryService, TasksService,} from "./api/index";
 import {UserAPI} from "./helper";
 
 
@@ -14,7 +14,7 @@ export class ApiClient{
         }
         this.token = mergeOptions.headers.Authorization;
         this.client = new AxiosClient(mergeOptions);
-        this.register = new RegisterService(this.client);
+        this.register = new RegistryService(this.client);
         this.login = new LoginService(this.client);
         this.tasks = new TasksService(this.client);
         this.project = new ProjectsService(this.client);

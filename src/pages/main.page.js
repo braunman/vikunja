@@ -8,7 +8,7 @@ export class MainPage extends BasePage {
         super(page);
         this.loginUsername = this.page.locator('.username');
         this.userMenuDropdown = this.page.locator('.dropdown .dropdown-icon');
-        this.menuLogoutButton = this.page.getByText("Logout");
+        // this.menuLogoutButton = this.page.getByText("Logout");
         this.menu = new MenuElement(this.page);
         this.addNewTaskButton = this.page.locator(".add-task-button");
         this.netTaskInput = this.page.locator('.add-task-textarea');
@@ -19,14 +19,6 @@ export class MainPage extends BasePage {
     async open(){
         await super.open(this.userMenuDropdown)
     }
-
-    async logout() {
-        await step(`Logout user`, async () => {
-            await this.click(this.userMenuDropdown);
-            await this.click(this.menuLogoutButton);
-        })
-    }
-
 
     async addNewTask(task) {
         await step(`Add new task with ${task}`, async () => {

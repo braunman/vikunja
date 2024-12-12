@@ -6,7 +6,7 @@ import {readFromFile, User} from '../../src/helper';
 test.use({ storageState: { cookies: [], origins: [] } });
 
 test('Login with exist user @UI @LOGIN @POSITIVE', async ({ webApp }) => {
-    await description("Try to login with new register user (user with credentials demo:demo exist by default)")
+    await description("Try to login with exist user")
     await feature("login")
     const user = await readFromFile('.auth/user.json')
     await webApp.loginPage.open()
