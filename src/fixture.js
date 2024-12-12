@@ -1,7 +1,7 @@
 import {expect, test as base} from '@playwright/test';
 import {WebApp} from './app';
 import {ApiClient} from './api.client';
-import {fileExists, saveToFile, readFromFile} from "./helper";
+import {fileExistsAndNotOlderThanHour, saveToFile, readFromFile} from "./helper";
 
 export { expect } from '@playwright/test';
 
@@ -13,7 +13,7 @@ export const test = base.extend({
 
     api: async ({}, use) => {
         let api;
-        if (await fileExists('.auth/token.json')){
+        if (await fileExistsAndNotOlderThanHour('.auth/token.json')){
             const data = await readFromFile('.auth/token.json');
             api = new ApiClient({ headers: { 'Authorization': `${data.token}`}});
         }

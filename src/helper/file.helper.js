@@ -13,10 +13,13 @@ export async function readFromFile(filePath) {
 }
 
 
-export const fileExists = async (filePath) => {
+export const fileExistsAndNotOlderThanHour = async (filePath) => {
     try {
         await fs.access(filePath);
-        return true;
+        const stats = await fs.stat(filePath);
+        const hourInMs = 60 * 60 * 1000;
+        const fileAge = Date.now() - stats.mtimeMs;
+        return fileAge <= hourInMs;
     } catch {
         return false;
     }
