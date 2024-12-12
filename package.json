@@ -1,0 +1,19 @@
+{
+  "devDependencies": {
+    "@faker-js/faker": "^9.2.0",
+    "@playwright/test": "^1.48.2",
+    "@types/node": "^22.9.0",
+    "allure-playwright": "^3.0.6",
+    "axios": "^1.7.7"
+  },
+  "scripts": {
+    "test": "npx playwright test",
+    "test-trace": "npx playwright test --trace on",
+    "debug": "npx playwright test --ui",
+    "allureGenerate": "allure generate --clean",
+    "allureOpen": "allure open",
+    "allure": "allure generate --clean && allure open"
+  },
+  "dependencies": {
+  }
+}
