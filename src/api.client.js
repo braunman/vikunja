@@ -1,4 +1,4 @@
-import {AxiosClient, LoginService, ProjectsService, RegistryService, TasksService,} from "./api/index";
+import {AxiosClient, LoginService, ProjectsService, RegisterService, TasksService,} from "./api/index";
 import {UserAPI} from "./helper";
 
 
@@ -14,7 +14,7 @@ export class ApiClient{
         }
         this.token = mergeOptions.headers.Authorization;
         this.client = new AxiosClient(mergeOptions);
-        this.register = new RegistryService(this.client);
+        this.register = new RegisterService(this.client);
         this.login = new LoginService(this.client);
         this.tasks = new TasksService(this.client);
         this.project = new ProjectsService(this.client);
@@ -25,9 +25,6 @@ export class ApiClient{
         const user = new UserAPI().build()
         await apiClient.register.register(user);
         const {data} = await apiClient.login.login(user);
-        console.log('>>>');
-        console.log(`${data.token}`)
-        console.log('>>>');
         return new ApiClient({ headers: { 'Authorization': `Bearer ${data.token}` } });
     }
 
