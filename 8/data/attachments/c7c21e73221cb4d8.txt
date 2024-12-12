@@ -1,0 +1,110 @@
+
+/projects
+
+
+Request:
+{
+  "method": "PUT"
+}
+
+
+
+Response:
+{
+  "data": {
+    "id": 306,
+    "title": "approbo",
+    "description": "Victoria curatio cetera tunc peior.",
+    "identifier": "",
+    "hex_color": "",
+    "parent_project_id": 0,
+    "owner": {
+      "id": 166,
+      "name": "",
+      "username": "ZackeryKessler",
+      "created": "0001-01-01T00:00:00Z",
+      "updated": "0001-01-01T00:00:00Z"
+    },
+    "is_archived": false,
+    "background_information": null,
+    "background_blur_hash": "",
+    "is_favorite": false,
+    "position": 20054016,
+    "views": [
+      {
+        "id": 1465,
+        "title": "List",
+        "project_id": 306,
+        "view_kind": "list",
+        "filter": {
+          "s": "",
+          "sort_by": null,
+          "order_by": null,
+          "filter": "done = false",
+          "filter_include_nulls": false
+        },
+        "position": 100,
+        "bucket_configuration_mode": "none",
+        "bucket_configuration": null,
+        "default_bucket_id": 0,
+        "done_bucket_id": 0,
+        "updated": "2024-12-12T21:45:50.985160051+01:00",
+        "created": "2024-12-12T21:45:50.985168637+01:00"
+      },
+      {
+        "id": 1466,
+        "title": "Gantt",
+        "project_id": 306,
+        "view_kind": "gantt",
+        "filter": null,
+        "position": 200,
+        "bucket_configuration_mode": "none",
+        "bucket_configuration": null,
+        "default_bucket_id": 0,
+        "done_bucket_id": 0,
+        "updated": "2024-12-12T21:45:50.998005451+01:00",
+        "created": "2024-12-12T21:45:50.998014699+01:00"
+      },
+      {
+        "id": 1467,
+        "title": "Table",
+        "project_id": 306,
+        "view_kind": "table",
+        "filter": null,
+        "position": 300,
+        "bucket_configuration_mode": "none",
+        "bucket_configuration": null,
+        "default_bucket_id": 0,
+        "done_bucket_id": 0,
+        "updated": "2024-12-12T21:45:51.010285853+01:00",
+        "created": "2024-12-12T21:45:51.010295943+01:00"
+      },
+      {
+        "id": 1468,
+        "title": "Kanban",
+        "project_id": 306,
+        "view_kind": "kanban",
+        "filter": null,
+        "position": 400,
+        "bucket_configuration_mode": "manual",
+        "bucket_configuration": null,
+        "default_bucket_id": 0,
+        "done_bucket_id": 0,
+        "updated": "2024-12-12T21:45:51.022327822+01:00",
+        "created": "2024-12-12T21:45:51.022335005+01:00"
+      }
+    ],
+    "max_right": 0,
+    "created": "2024-12-12T21:45:50.980445596+01:00",
+    "updated": "2024-12-12T21:45:50.982969044+01:00"
+  },
+  "headers": {
+    "content-length": "1759",
+    "content-type": "application/json",
+    "date": "Thu, 12 Dec 2024 20:45:51 GMT",
+    "permissions-policy": "interest-cohort=()",
+    "vary": "Origin",
+    "x-frame-options": "DENY"
+  },
+  "status": 201
+}

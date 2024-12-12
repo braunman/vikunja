@@ -1,0 +1,289 @@
+
+/projects
+
+
+Request:
+{
+  "method": "GET"
+}
+
+
+
+Response:
+{
+  "data": [
+    {
+      "id": 304,
+      "title": "Inbox",
+      "description": "",
+      "identifier": "",
+      "hex_color": "",
+      "parent_project_id": 0,
+      "owner": {
+        "id": 166,
+        "name": "",
+        "username": "ZackeryKessler",
+        "created": "2024-12-12T21:45:50+01:00",
+        "updated": "2024-12-12T21:45:50+01:00"
+      },
+      "is_archived": false,
+      "background_information": null,
+      "background_blur_hash": "",
+      "is_favorite": false,
+      "position": 19922944,
+      "views": [
+        {
+          "id": 1457,
+          "title": "List",
+          "project_id": 304,
+          "view_kind": "list",
+          "filter": {
+            "s": "",
+            "sort_by": null,
+            "order_by": null,
+            "filter": "done = false",
+            "filter_include_nulls": false
+          },
+          "position": 100,
+          "bucket_configuration_mode": "none",
+          "bucket_configuration": null,
+          "default_bucket_id": 0,
+          "done_bucket_id": 0,
+          "updated": "2024-12-12T21:45:50+01:00",
+          "created": "2024-12-12T21:45:50+01:00"
+        },
+        {
+          "id": 1458,
+          "title": "Gantt",
+          "project_id": 304,
+          "view_kind": "gantt",
+          "filter": null,
+          "position": 200,
+          "bucket_configuration_mode": "none",
+          "bucket_configuration": null,
+          "default_bucket_id": 0,
+          "done_bucket_id": 0,
+          "updated": "2024-12-12T21:45:50+01:00",
+          "created": "2024-12-12T21:45:50+01:00"
+        },
+        {
+          "id": 1459,
+          "title": "Table",
+          "project_id": 304,
+          "view_kind": "table",
+          "filter": null,
+          "position": 300,
+          "bucket_configuration_mode": "none",
+          "bucket_configuration": null,
+          "default_bucket_id": 0,
+          "done_bucket_id": 0,
+          "updated": "2024-12-12T21:45:50+01:00",
+          "created": "2024-12-12T21:45:50+01:00"
+        },
+        {
+          "id": 1460,
+          "title": "Kanban",
+          "project_id": 304,
+          "view_kind": "kanban",
+          "filter": null,
+          "position": 400,
+          "bucket_configuration_mode": "manual",
+          "bucket_configuration": null,
+          "default_bucket_id": 0,
+          "done_bucket_id": 0,
+          "updated": "2024-12-12T21:45:50+01:00",
+          "created": "2024-12-12T21:45:50+01:00"
+        }
+      ],
+      "max_right": null,
+      "created": "2024-12-12T21:45:50+01:00",
+      "updated": "2024-12-12T21:45:52+01:00"
+    },
+    {
+      "id": 305,
+      "title": "suscipit",
+      "description": "Angustus torrens vulgus.",
+      "identifier": "",
+      "hex_color": "",
+      "parent_project_id": 0,
+      "owner": {
+        "id": 166,
+        "name": "",
+        "username": "ZackeryKessler",
+        "created": "2024-12-12T21:45:50+01:00",
+        "updated": "2024-12-12T21:45:50+01:00"
+      },
+      "is_archived": false,
+      "background_information": null,
+      "background_blur_hash": "",
+      "is_favorite": false,
+      "position": 19988480,
+      "views": [
+        {
+          "id": 1461,
+          "title": "List",
+          "project_id": 305,
+          "view_kind": "list",
+          "filter": {
+            "s": "",
+            "sort_by": null,
+            "order_by": null,
+            "filter": "done = false",
+            "filter_include_nulls": false
+          },
+          "position": 100,
+          "bucket_configuration_mode": "none",
+          "bucket_configuration": null,
+          "default_bucket_id": 0,
+          "done_bucket_id": 0,
+          "updated": "2024-12-12T21:45:50+01:00",
+          "created": "2024-12-12T21:45:50+01:00"
+        },
+        {
+          "id": 1462,
+          "title": "Gantt",
+          "project_id": 305,
+          "view_kind": "gantt",
+          "filter": null,
+          "position": 200,
+          "bucket_configuration_mode": "none",
+          "bucket_configuration": null,
+          "default_bucket_id": 0,
+          "done_bucket_id": 0,
+          "updated": "2024-12-12T21:45:50+01:00",
+          "created": "2024-12-12T21:45:50+01:00"
+        },
+        {
+          "id": 1463,
+          "title": "Table",
+          "project_id": 305,
+          "view_kind": "table",
+          "filter": null,
+          "position": 300,
+          "bucket_configuration_mode": "none",
+          "bucket_configuration": null,
+          "default_bucket_id": 0,
+          "done_bucket_id": 0,
+          "updated": "2024-12-12T21:45:50+01:00",
+          "created": "2024-12-12T21:45:50+01:00"
+        },
+        {
+          "id": 1464,
+          "title": "Kanban",
+          "project_id": 305,
+          "view_kind": "kanban",
+          "filter": null,
+          "position": 400,
+          "bucket_configuration_mode": "manual",
+          "bucket_configuration": null,
+          "default_bucket_id": 0,
+          "done_bucket_id": 0,
+          "updated": "2024-12-12T21:45:50+01:00",
+          "created": "2024-12-12T21:45:50+01:00"
+        }
+      ],
+      "max_right": null,
+      "created": "2024-12-12T21:45:50+01:00",
+      "updated": "2024-12-12T21:45:50+01:00"
+    },
+    {
+      "id": 306,
+      "title": "approbo",
+      "description": "Victoria curatio cetera tunc peior.",
+      "identifier": "",
+      "hex_color": "",
+      "parent_project_id": 0,
+      "owner": {
+        "id": 166,
+        "name": "",
+        "username": "ZackeryKessler",
+        "created": "2024-12-12T21:45:50+01:00",
+        "updated": "2024-12-12T21:45:50+01:00"
+      },
+      "is_archived": false,
+      "background_information": null,
+      "background_blur_hash": "",
+      "is_favorite": false,
+      "position": 20054016,
+      "views": [
+        {
+          "id": 1465,
+          "title": "List",
+          "project_id": 306,
+          "view_kind": "list",
+          "filter": {
+            "s": "",
+            "sort_by": null,
+            "order_by": null,
+            "filter": "done = false",
+            "filter_include_nulls": false
+          },
+          "position": 100,
+          "bucket_configuration_mode": "none",
+          "bucket_configuration": null,
+          "default_bucket_id": 0,
+          "done_bucket_id": 0,
+          "updated": "2024-12-12T21:45:50+01:00",
+          "created": "2024-12-12T21:45:50+01:00"
+        },
+        {
+          "id": 1466,
+          "title": "Gantt",
+          "project_id": 306,
+          "view_kind": "gantt",
+          "filter": null,
+          "position": 200,
+          "bucket_configuration_mode": "none",
+          "bucket_configuration": null,
+          "default_bucket_id": 0,
+          "done_bucket_id": 0,
+          "updated": "2024-12-12T21:45:50+01:00",
+          "created": "2024-12-12T21:45:50+01:00"
+        },
+        {
+          "id": 1467,
+          "title": "Table",
+          "project_id": 306,
+          "view_kind": "table",
+          "filter": null,
+          "position": 300,
+          "bucket_configuration_mode": "none",
+          "bucket_configuration": null,
+          "default_bucket_id": 0,
+          "done_bucket_id": 0,
+          "updated": "2024-12-12T21:45:51+01:00",
+          "created": "2024-12-12T21:45:51+01:00"
+        },
+        {
+          "id": 1468,
+          "title": "Kanban",
+          "project_id": 306,
+          "view_kind": "kanban",
+          "filter": null,
+          "position": 400,
+          "bucket_configuration_mode": "manual",
+          "bucket_configuration": null,
+          "default_bucket_id": 0,
+          "done_bucket_id": 0,
+          "updated": "2024-12-12T21:45:51+01:00",
+          "created": "2024-12-12T21:45:51+01:00"
+        }
+      ],
+      "max_right": null,
+      "created": "2024-12-12T21:45:50+01:00",
+      "updated": "2024-12-12T21:45:50+01:00"
+    }
+  ],
+  "headers": {
+    "access-control-expose-headers": "x-pagination-total-pages, x-pagination-result-count",
+    "content-type": "application/json",
+    "date": "Thu, 12 Dec 2024 20:45:52 GMT",
+    "permissions-policy": "interest-cohort=()",
+    "vary": "Origin",
+    "x-frame-options": "DENY",
+    "x-pagination-result-count": "3",
+    "x-pagination-total-pages": "1",
+    "transfer-encoding": "chunked"
+  },
+  "status": 200
+}

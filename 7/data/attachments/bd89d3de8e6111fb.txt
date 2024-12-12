@@ -1,3 +1,0 @@
-Object {
-  "token": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IiIsImVtYWlsUmVtaW5kZXJzRW5hYmxlZCI6ZmFsc2UsImV4cCI6MTczNjYyNjk3OCwiaWQiOjE0OSwiaXNMb2NhbFVzZXIiOnRydWUsImxvbmciOnRydWUsIm5hbWUiOiIiLCJ0eXBlIjoxLCJ1c2VybmFtZSI6Ik1hcmt1c0Fua3VuZGluZzE1In0.mY-HHhEN3iPlKwCdVs5rCJHBptz4UvT4PWWUcSjYBc8"
-} save to file .auth/token.json

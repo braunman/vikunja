@@ -1,0 +1,26 @@
+
+/tasks/1527
+
+
+Request:
+{
+  "method": "DELETE"
+}
+
+
+
+Response:
+{
+  "data": {
+    "message": "Successfully deleted."
+  },
+  "headers": {
+    "content-length": "36",
+    "content-type": "application/json",
+    "date": "Thu, 12 Dec 2024 20:45:53 GMT",
+    "permissions-policy": "interest-cohort=()",
+    "vary": "Origin",
+    "x-frame-options": "DENY"
+  },
+  "status": 200
+}

@@ -1,0 +1,34 @@
+
+/register
+
+
+Request:
+{
+  "method": "POST"
+}
+
+
+
+Response:
+{
+  "data": {
+    "id": 168,
+    "name": "",
+    "username": "Beth_Weimann43",
+    "email": "Marietta55@hotmail.com",
+    "created": "2024-12-12T21:45:51+01:00",
+    "updated": "2024-12-12T21:45:51.887925193+01:00"
+  },
+  "headers": {
+    "content-length": "168",
+    "content-type": "application/json",
+    "date": "Thu, 12 Dec 2024 20:45:51 GMT",
+    "permissions-policy": "interest-cohort=()",
+    "vary": "Origin",
+    "x-frame-options": "DENY",
+    "x-ratelimit-limit": "10",
+    "x-ratelimit-remaining": "4",
+    "x-ratelimit-reset": "1734036408"
+  },
+  "status": 200
+}

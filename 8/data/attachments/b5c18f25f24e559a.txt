@@ -1,0 +1,3 @@
+Object {
+  "token": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IiIsImVtYWlsUmVtaW5kZXJzRW5hYmxlZCI6ZmFsc2UsImV4cCI6MTczNjYyODM1MCwiaWQiOjE2NiwiaXNMb2NhbFVzZXIiOnRydWUsImxvbmciOnRydWUsIm5hbWUiOiIiLCJ0eXBlIjoxLCJ1c2VybmFtZSI6IlphY2tlcnlLZXNzbGVyIn0.SiaC31swWfzWNDJ35gDhPUX7-DOZGHcNUlJdYunTFg4"
+} save to file .auth/token.json
