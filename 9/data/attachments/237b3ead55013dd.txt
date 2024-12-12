@@ -1,0 +1,34 @@
+
+/register
+
+
+Request:
+{
+  "method": "POST"
+}
+
+
+
+Response:
+{
+  "data": {
+    "id": 178,
+    "name": "",
+    "username": "Hellen_Koelpin",
+    "email": "Karlee_Bruen@hotmail.com",
+    "created": "2024-12-12T21:54:05+01:00",
+    "updated": "2024-12-12T21:54:05.337619978+01:00"
+  },
+  "headers": {
+    "content-length": "170",
+    "content-type": "application/json",
+    "date": "Thu, 12 Dec 2024 20:54:05 GMT",
+    "permissions-policy": "interest-cohort=()",
+    "vary": "Origin",
+    "x-frame-options": "DENY",
+    "x-ratelimit-limit": "10",
+    "x-ratelimit-remaining": "4",
+    "x-ratelimit-reset": "1734036900"
+  },
+  "status": 200
+}

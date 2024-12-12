@@ -1,0 +1,289 @@
+
+/projects
+
+
+Request:
+{
+  "method": "GET"
+}
+
+
+
+Response:
+{
+  "data": [
+    {
+      "id": 323,
+      "title": "Inbox",
+      "description": "",
+      "identifier": "",
+      "hex_color": "",
+      "parent_project_id": 0,
+      "owner": {
+        "id": 176,
+        "name": "",
+        "username": "Stefanie_Marvin",
+        "created": "2024-12-12T21:54:03+01:00",
+        "updated": "2024-12-12T21:54:03+01:00"
+      },
+      "is_archived": false,
+      "background_information": null,
+      "background_blur_hash": "",
+      "is_favorite": false,
+      "position": 21168128,
+      "views": [
+        {
+          "id": 1533,
+          "title": "List",
+          "project_id": 323,
+          "view_kind": "list",
+          "filter": {
+            "s": "",
+            "sort_by": null,
+            "order_by": null,
+            "filter": "done = false",
+            "filter_include_nulls": false
+          },
+          "position": 100,
+          "bucket_configuration_mode": "none",
+          "bucket_configuration": null,
+          "default_bucket_id": 0,
+          "done_bucket_id": 0,
+          "updated": "2024-12-12T21:54:03+01:00",
+          "created": "2024-12-12T21:54:03+01:00"
+        },
+        {
+          "id": 1534,
+          "title": "Gantt",
+          "project_id": 323,
+          "view_kind": "gantt",
+          "filter": null,
+          "position": 200,
+          "bucket_configuration_mode": "none",
+          "bucket_configuration": null,
+          "default_bucket_id": 0,
+          "done_bucket_id": 0,
+          "updated": "2024-12-12T21:54:03+01:00",
+          "created": "2024-12-12T21:54:03+01:00"
+        },
+        {
+          "id": 1535,
+          "title": "Table",
+          "project_id": 323,
+          "view_kind": "table",
+          "filter": null,
+          "position": 300,
+          "bucket_configuration_mode": "none",
+          "bucket_configuration": null,
+          "default_bucket_id": 0,
+          "done_bucket_id": 0,
+          "updated": "2024-12-12T21:54:03+01:00",
+          "created": "2024-12-12T21:54:03+01:00"
+        },
+        {
+          "id": 1536,
+          "title": "Kanban",
+          "project_id": 323,
+          "view_kind": "kanban",
+          "filter": null,
+          "position": 400,
+          "bucket_configuration_mode": "manual",
+          "bucket_configuration": null,
+          "default_bucket_id": 0,
+          "done_bucket_id": 0,
+          "updated": "2024-12-12T21:54:03+01:00",
+          "created": "2024-12-12T21:54:03+01:00"
+        }
+      ],
+      "max_right": null,
+      "created": "2024-12-12T21:54:03+01:00",
+      "updated": "2024-12-12T21:54:03+01:00"
+    },
+    {
+      "id": 324,
+      "title": "debeo",
+      "description": "Traho ultra eos.",
+      "identifier": "",
+      "hex_color": "",
+      "parent_project_id": 0,
+      "owner": {
+        "id": 176,
+        "name": "",
+        "username": "Stefanie_Marvin",
+        "created": "2024-12-12T21:54:03+01:00",
+        "updated": "2024-12-12T21:54:03+01:00"
+      },
+      "is_archived": false,
+      "background_information": null,
+      "background_blur_hash": "",
+      "is_favorite": false,
+      "position": 21233664,
+      "views": [
+        {
+          "id": 1537,
+          "title": "List",
+          "project_id": 324,
+          "view_kind": "list",
+          "filter": {
+            "s": "",
+            "sort_by": null,
+            "order_by": null,
+            "filter": "done = false",
+            "filter_include_nulls": false
+          },
+          "position": 100,
+          "bucket_configuration_mode": "none",
+          "bucket_configuration": null,
+          "default_bucket_id": 0,
+          "done_bucket_id": 0,
+          "updated": "2024-12-12T21:54:03+01:00",
+          "created": "2024-12-12T21:54:03+01:00"
+        },
+        {
+          "id": 1538,
+          "title": "Gantt",
+          "project_id": 324,
+          "view_kind": "gantt",
+          "filter": null,
+          "position": 200,
+          "bucket_configuration_mode": "none",
+          "bucket_configuration": null,
+          "default_bucket_id": 0,
+          "done_bucket_id": 0,
+          "updated": "2024-12-12T21:54:03+01:00",
+          "created": "2024-12-12T21:54:03+01:00"
+        },
+        {
+          "id": 1539,
+          "title": "Table",
+          "project_id": 324,
+          "view_kind": "table",
+          "filter": null,
+          "position": 300,
+          "bucket_configuration_mode": "none",
+          "bucket_configuration": null,
+          "default_bucket_id": 0,
+          "done_bucket_id": 0,
+          "updated": "2024-12-12T21:54:03+01:00",
+          "created": "2024-12-12T21:54:03+01:00"
+        },
+        {
+          "id": 1540,
+          "title": "Kanban",
+          "project_id": 324,
+          "view_kind": "kanban",
+          "filter": null,
+          "position": 400,
+          "bucket_configuration_mode": "manual",
+          "bucket_configuration": null,
+          "default_bucket_id": 0,
+          "done_bucket_id": 0,
+          "updated": "2024-12-12T21:54:03+01:00",
+          "created": "2024-12-12T21:54:03+01:00"
+        }
+      ],
+      "max_right": null,
+      "created": "2024-12-12T21:54:03+01:00",
+      "updated": "2024-12-12T21:54:03+01:00"
+    },
+    {
+      "id": 325,
+      "title": "collum",
+      "description": "Teres adopto commodi accommodo cultellus demo una coruscus bestia.",
+      "identifier": "",
+      "hex_color": "",
+      "parent_project_id": 0,
+      "owner": {
+        "id": 176,
+        "name": "",
+        "username": "Stefanie_Marvin",
+        "created": "2024-12-12T21:54:03+01:00",
+        "updated": "2024-12-12T21:54:03+01:00"
+      },
+      "is_archived": false,
+      "background_information": null,
+      "background_blur_hash": "",
+      "is_favorite": false,
+      "position": 21299200,
+      "views": [
+        {
+          "id": 1541,
+          "title": "List",
+          "project_id": 325,
+          "view_kind": "list",
+          "filter": {
+            "s": "",
+            "sort_by": null,
+            "order_by": null,
+            "filter": "done = false",
+            "filter_include_nulls": false
+          },
+          "position": 100,
+          "bucket_configuration_mode": "none",
+          "bucket_configuration": null,
+          "default_bucket_id": 0,
+          "done_bucket_id": 0,
+          "updated": "2024-12-12T21:54:04+01:00",
+          "created": "2024-12-12T21:54:04+01:00"
+        },
+        {
+          "id": 1542,
+          "title": "Gantt",
+          "project_id": 325,
+          "view_kind": "gantt",
+          "filter": null,
+          "position": 200,
+          "bucket_configuration_mode": "none",
+          "bucket_configuration": null,
+          "default_bucket_id": 0,
+          "done_bucket_id": 0,
+          "updated": "2024-12-12T21:54:04+01:00",
+          "created": "2024-12-12T21:54:04+01:00"
+        },
+        {
+          "id": 1543,
+          "title": "Table",
+          "project_id": 325,
+          "view_kind": "table",
+          "filter": null,
+          "position": 300,
+          "bucket_configuration_mode": "none",
+          "bucket_configuration": null,
+          "default_bucket_id": 0,
+          "done_bucket_id": 0,
+          "updated": "2024-12-12T21:54:04+01:00",
+          "created": "2024-12-12T21:54:04+01:00"
+        },
+        {
+          "id": 1544,
+          "title": "Kanban",
+          "project_id": 325,
+          "view_kind": "kanban",
+          "filter": null,
+          "position": 400,
+          "bucket_configuration_mode": "manual",
+          "bucket_configuration": null,
+          "default_bucket_id": 0,
+          "done_bucket_id": 0,
+          "updated": "2024-12-12T21:54:04+01:00",
+          "created": "2024-12-12T21:54:04+01:00"
+        }
+      ],
+      "max_right": null,
+      "created": "2024-12-12T21:54:04+01:00",
+      "updated": "2024-12-12T21:54:04+01:00"
+    }
+  ],
+  "headers": {
+    "access-control-expose-headers": "x-pagination-total-pages, x-pagination-result-count",
+    "content-type": "application/json",
+    "date": "Thu, 12 Dec 2024 20:54:05 GMT",
+    "permissions-policy": "interest-cohort=()",
+    "vary": "Origin",
+    "x-frame-options": "DENY",
+    "x-pagination-result-count": "3",
+    "x-pagination-total-pages": "1",
+    "transfer-encoding": "chunked"
+  },
+  "status": 200
+}

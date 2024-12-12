@@ -1,5 +1,0 @@
-Object {
-  "username": "Allene_Waelchi",
-  "password": "6aQfy3yHwvgzDku",
-  "email": "Henderson.Nitzsche@yahoo.com"
-} save to file .auth/user.json

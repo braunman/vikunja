@@ -1,0 +1,34 @@
+
+/register
+
+
+Request:
+{
+  "method": "POST"
+}
+
+
+
+Response:
+{
+  "data": {
+    "id": 177,
+    "name": "",
+    "username": "Erling37",
+    "email": "Jonas_Rowe@gmail.com",
+    "created": "2024-12-12T21:54:04+01:00",
+    "updated": "2024-12-12T21:54:04.932361634+01:00"
+  },
+  "headers": {
+    "content-length": "160",
+    "content-type": "application/json",
+    "date": "Thu, 12 Dec 2024 20:54:04 GMT",
+    "permissions-policy": "interest-cohort=()",
+    "vary": "Origin",
+    "x-frame-options": "DENY",
+    "x-ratelimit-limit": "10",
+    "x-ratelimit-remaining": "5",
+    "x-ratelimit-reset": "1734036900"
+  },
+  "status": 200
+}

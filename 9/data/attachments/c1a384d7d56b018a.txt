@@ -1,0 +1,5 @@
+Object {
+  "username": "Tobin48",
+  "password": "V6vA07QYOTYZDEg",
+  "email": "Clifton_Weimann@hotmail.com"
+} save to file .auth/user.json

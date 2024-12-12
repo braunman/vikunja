@@ -1,0 +1,29 @@
+
+/login
+
+
+Request:
+{
+  "method": "POST"
+}
+
+
+
+Response:
+{
+  "data": {
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IiIsImVtYWlsUmVtaW5kZXJzRW5hYmxlZCI6ZmFsc2UsImV4cCI6MTczNjYyODg0MywiaWQiOjE3NiwiaXNMb2NhbFVzZXIiOnRydWUsImxvbmciOnRydWUsIm5hbWUiOiIiLCJ0eXBlIjoxLCJ1c2VybmFtZSI6IlN0ZWZhbmllX01hcnZpbiJ9.WL-MJBCF_Rvg1zGpjGYZzlLaw2w0ULiP90yoQGfxrOU"
+  },
+  "headers": {
+    "content-length": "290",
+    "content-type": "application/json",
+    "date": "Thu, 12 Dec 2024 20:54:03 GMT",
+    "permissions-policy": "interest-cohort=()",
+    "vary": "Origin",
+    "x-frame-options": "DENY",
+    "x-ratelimit-limit": "10",
+    "x-ratelimit-remaining": "6",
+    "x-ratelimit-reset": "1734036900"
+  },
+  "status": 200
+}
