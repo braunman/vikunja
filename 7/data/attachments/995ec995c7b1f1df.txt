@@ -1,0 +1,110 @@
+
+/projects
+
+
+Request:
+{
+  "method": "PUT"
+}
+
+
+
+Response:
+{
+  "data": {
+    "id": 275,
+    "title": "alienus",
+    "description": "Solitudo ager vulticulus angelus amita arx.",
+    "identifier": "",
+    "hex_color": "",
+    "parent_project_id": 0,
+    "owner": {
+      "id": 149,
+      "name": "",
+      "username": "MarkusAnkunding15",
+      "created": "0001-01-01T00:00:00Z",
+      "updated": "0001-01-01T00:00:00Z"
+    },
+    "is_archived": false,
+    "background_information": null,
+    "background_blur_hash": "",
+    "is_favorite": false,
+    "position": 18022400,
+    "views": [
+      {
+        "id": 1341,
+        "title": "List",
+        "project_id": 275,
+        "view_kind": "list",
+        "filter": {
+          "s": "",
+          "sort_by": null,
+          "order_by": null,
+          "filter": "done = false",
+          "filter_include_nulls": false
+        },
+        "position": 100,
+        "bucket_configuration_mode": "none",
+        "bucket_configuration": null,
+        "default_bucket_id": 0,
+        "done_bucket_id": 0,
+        "updated": "2024-12-12T21:22:58.180709011+01:00",
+        "created": "2024-12-12T21:22:58.180717157+01:00"
+      },
+      {
+        "id": 1342,
+        "title": "Gantt",
+        "project_id": 275,
+        "view_kind": "gantt",
+        "filter": null,
+        "position": 200,
+        "bucket_configuration_mode": "none",
+        "bucket_configuration": null,
+        "default_bucket_id": 0,
+        "done_bucket_id": 0,
+        "updated": "2024-12-12T21:22:58.191518432+01:00",
+        "created": "2024-12-12T21:22:58.191525224+01:00"
+      },
+      {
+        "id": 1343,
+        "title": "Table",
+        "project_id": 275,
+        "view_kind": "table",
+        "filter": null,
+        "position": 300,
+        "bucket_configuration_mode": "none",
+        "bucket_configuration": null,
+        "default_bucket_id": 0,
+        "done_bucket_id": 0,
+        "updated": "2024-12-12T21:22:58.202422919+01:00",
+        "created": "2024-12-12T21:22:58.202538275+01:00"
+      },
+      {
+        "id": 1344,
+        "title": "Kanban",
+        "project_id": 275,
+        "view_kind": "kanban",
+        "filter": null,
+        "position": 400,
+        "bucket_configuration_mode": "manual",
+        "bucket_configuration": null,
+        "default_bucket_id": 0,
+        "done_bucket_id": 0,
+        "updated": "2024-12-12T21:22:58.212719158+01:00",
+        "created": "2024-12-12T21:22:58.212725931+01:00"
+      }
+    ],
+    "max_right": 0,
+    "created": "2024-12-12T21:22:58.176640127+01:00",
+    "updated": "2024-12-12T21:22:58.178745957+01:00"
+  },
+  "headers": {
+    "content-length": "1770",
+    "content-type": "application/json",
+    "date": "Thu, 12 Dec 2024 20:22:58 GMT",
+    "permissions-policy": "interest-cohort=()",
+    "vary": "Origin",
+    "x-frame-options": "DENY"
+  },
+  "status": 201
+}
